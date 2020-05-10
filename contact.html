@@ -68,12 +68,12 @@
             </div>
             <div class="row">
                 <div class="col-md-8 section-heading mb-40">
-                    <form action="/forms/smtp.php" data-form-email novalidate>
+                    <form action="/forms/mail_handler.php" data-form-email novalidate>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Your Name *</label>
-                                    <input name="contact-name" type="text" class="form-control" required>
+                                    <input name="name" type="text" class="form-control" required>
                                     <div class="invalid-feedback">
                                         Please type your name.
                                     </div>
@@ -82,26 +82,26 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Email Address *</label>
-                                    <input name="contact-email" type="email" placeholder="you@yoursite.com"
+                                    <input name="email" type="email" placeholder="you@yoursite.com"
                                         class="form-control" required>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <!-- <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Company Name</label>
                                     <input name="contact-company" type="text" class="form-control" required>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Contact Number</label>
-                                    <input name="contact-phone" type="tel" class="form-control" required>
+                                    <input name="phone" type="tel" class="form-control" required>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
                                     <label>Message:</label>
-                                    <textarea class="form-control" name="contact-message" rows="10"
+                                    <textarea class="form-control" name="message" rows="10"
                                         placeholder="How can we help?"></textarea>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@
                                 <div class="d-none alert alert-danger" role="alert" data-error-message>
                                     Please fill all fields correctly.
                                 </div>
-                                <button type="submit" class="default-btn" data-loading-text="Sending">
+                                <button type="submit" name="submit" value="Send" class="default-btn" data-loading-text="Sending">
                                     Send
                                 </button>
                             </div>
