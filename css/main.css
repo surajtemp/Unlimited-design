@@ -477,7 +477,7 @@ button {
 
 .header-btn .signup-btn {
     background-color: #ff8205 !important;
-    border-radius   : 30px;
+    border-radius   : 4px;
     display         : inline-block;
     padding         : 10px 30px;
     font-size       : 14px;
@@ -680,9 +680,10 @@ ul.nav>li>a.active {
 }
 
 .hero-content p {
-    font-size    : 18px;
-    line-height  : 32px;
-    margin-bottom: 30px
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 30px;
+    color: #333;
 }
 
 .bubble-effect .bubble {
